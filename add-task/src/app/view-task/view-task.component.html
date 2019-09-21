@@ -1,0 +1,18 @@
+<div class="container">
+   <table class="table">
+       <thead>
+           <tr>
+               <th>Task</th>
+               <th>Update</th>
+               <th>Delete</th>
+           </tr>
+       </thead>
+       <tbody>
+           <tr *ngFor="let task of taskList">
+               <td>{{task}}</td>
+               <td><button class="btn btn-outline-warning">Update</button></td>
+               <td><button class="btn btn-outline-danger">Delete</button></td>
+           </tr>
+       </tbody>
+   </table>
+</div>
